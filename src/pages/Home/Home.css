@@ -10,20 +10,53 @@ Home Page CSS
 
 
 #home-hero{
+    background: url('../../assets/home/wave1.svg') no-repeat center center/cover;
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 
 #home-hero .hero-info {
-
+    width: 45%;
 }
 
-#home-hero .hero-display {
+#home-hero .hero-info .hero-heading{
+    color: white;
+}
 
+
+#home-hero .hero-display {
+	background-color: var(--background);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 17px;
+	margin-top: 13em;
+	box-shadow: 2px 2px 100px 12px #e4e4e4;
+	padding: 20px 15px;
+    width: 18vw
+}
+
+
+#home-hero .hero-display .header{
+    width: 100%;
+}
+
+#home-hero .hero-display .header a{
+    padding: 10px;
+    font-size: 20px;
+    color: var(--pri-font-color);
+}
+
+#home-hero .hero-display p {
+	width: 90%;
+	text-align: center;
+	font-weight: bold;
+	color: #6a6a6a;
+	padding: 10px 10px;
 }
 
 #home-hero img{
-    height: 10em;
+    height: 20em;
 }
