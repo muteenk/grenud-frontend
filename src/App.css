@@ -6,7 +6,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  border: .5px solid var(--gray-env);
 }
 
 nav .left, nav .mid, nav .right{
@@ -28,13 +29,13 @@ nav .right ul{
 }
 
 nav .nav-tabs li {
-  margin: 10px 25px;
+  margin: 10px 20px;
 }
 
 nav .nav-tabs li a{
-  color: var(--gray-text);
+  color: var(--inactive-text);
   font-weight: bold;
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 nav .nav-tabs li a:hover{
@@ -43,4 +44,6 @@ nav .nav-tabs li a:hover{
 
 nav .nav-tabs li .active {
   color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
 }
