@@ -3,9 +3,13 @@
   Lato: 100, 300, 400, 700, 900
 
   Open sans: 300, 400, 500, 600, 700, 800
+
+  Oswald: 200 300 400 500 600
+
+  Anton: 400
  
 --------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root{
 
@@ -13,18 +17,24 @@
 
   /* major colors */
   --background: white;
+
   --primary-color: #2c2fcf;
+  --primary-color-hover: #1d209c;
   --accent-color: #452ccf;
+
   --gray-env: rgb(204, 204, 204);
 
   --pri-font-color: #202020;
   
-  /* font colors */
+  /* text colors */
   --inactive-text: rgb(255, 255, 255);
+
 
   /* -------- Fonts ---------- */
   --primary-font: 'Lato', sans-serif;
   --secondary-font: 'Open Sans', sans-serif;
+  --heavy-font: 'Oswald', sans-serif;
+  --heavier-font: 'Anton', sans-serif;
 }
 
 
@@ -57,9 +67,10 @@ ul, li{
 
 /* Headings */
 .hero-heading{
+  font-family:  var(--heavy-font);
   font-size: 40px;
   text-align: center;
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 
@@ -97,9 +108,31 @@ ul, li{
   color: var(--primary-color);
 }
 
+.pri-btn-solid {
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 15px 25px;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0px;
+  transition: all 0.2s;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+.pri-btn-solid:hover{
+  background: var(--primary-color-hover);
+}
+
 
 
 /* Miscellaneous */
+
+.primary-text{
+  color: var(--primary-color);
+}
+
 .accent-text{
   color: var(--accent-color);
 }
