@@ -10,53 +10,86 @@ Home Page CSS
 
 
 #home-hero{
-    background: url('../../assets/home/wave1.svg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-#home-hero .hero-info {
-    width: 45%;
-}
-
-#home-hero .hero-info .hero-heading{
-    color: white;
-}
-
-
-#home-hero .hero-display {
-	background-color: var(--background);
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-radius: 17px;
-	margin-top: 13em;
-	box-shadow: 2px 2px 100px 12px #e4e4e4;
-	padding: 20px 15px;
-    width: 18vw
+	justify-content: flex-start;
+	align-items: flex-end;
+
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.712);
+	position: relative;
+	top: 0px;
+	left: 0px;
+	/* z-index: -1; */
+	width: 100vw;
 }
 
-
-#home-hero .hero-display .header{
-    width: 100%;
+#home-hero .heroBack {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
 }
 
-#home-hero .hero-display .header a{
-    padding: 10px;
-    font-size: 20px;
-    color: var(--pri-font-color);
+#home-hero .home-hero-info{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+
+	padding: 40px 20px;
 }
 
-#home-hero .hero-display p {
-	width: 90%;
-	text-align: center;
-	font-weight: bold;
-	color: #6a6a6a;
-	padding: 10px 10px;
+#home-hero .home-hero-info p{
+	color: white;
+	font-size: 18px;
+	letter-spacing: 8px;
+	padding: 10px 0px;
 }
 
-#home-hero img{
-    height: 20em;
+#home-hero .home-hero-info h1 {
+	color: white;
+	font-size: 66px;
+	font-family:  var(--heavier-font);
+	transition: all 1s ease-out;
+	text-align: left;
+	width: 60%;
+}
+
+.home-hero-info h1 span{
+	font-family: var(--heavier-font);
+}
+
+#home-hero .home-hero-info h1:hover{
+	cursor: pointer;
+	color: transparent;
+	-webkit-text-stroke: 2px white;
+}
+
+#home-hero .home-hero-info a{
+	margin-top: 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%; 
+	overflow: hidden;
+  }
+
+.video-container video {
+	/* Make video to at least 100% wide and tall */
+	min-width: 100%; 
+	min-height: 100vh; 
+
+	/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+	width: auto;
+	height: auto;
+
+	/* Center the video */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
