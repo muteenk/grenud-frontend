@@ -16,7 +16,7 @@ Home Page CSS
 	align-items: flex-end;
 
 	height: 100vh;
-	background: rgba(0, 0, 0, 0.712);
+	background: rgba(0, 0, 0, 0.74);
 	position: relative;
 	top: 0px;
 	left: 0px;
@@ -28,6 +28,7 @@ Home Page CSS
 	width: 100%;
 	position: absolute;
 	z-index: -1;
+	object-fit: cover;
 }
 
 #home-hero .home-hero-info{
