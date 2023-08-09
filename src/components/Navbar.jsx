@@ -172,10 +172,10 @@ const Navbar = () => {
 
                 <ul>
                     <li>
-                        <Link to="/company/">About Us</Link>
+                        <Link to="/company/about">About Us</Link>
                     </li>
                     <li>
-                        <Link to="/company/">Career</Link>
+                        <Link to="/company/career">Career</Link>
                     </li>
                 </ul>
 

@@ -17,17 +17,19 @@
 
   /* major colors */
   --background: white;
-
   --primary-color: #2c2fcf;
-  --primary-color-hover: #1d209c;
   --accent-color: #452ccf;
 
-  --gray-env: rgb(204, 204, 204);
+  /* Hover Colors */
+  --primary-color-hover: #1d209c;
+  --selection-hover: rgba(173, 173, 173, 0.329);
 
-  --pri-font-color: #202020;
+  /* Env Colors */
+  --gray-env: rgb(204, 204, 204);
   
   /* text colors */
   --inactive-text: rgb(255, 255, 255);
+  --pri-font-color: #202020;
 
 
   /* -------- Fonts ---------- */

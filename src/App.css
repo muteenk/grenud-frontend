@@ -146,6 +146,7 @@ nav #companyDrawer {
   width: 20%;
   height: 100vh;
   padding: 20px;
+  overflow-y: scroll;
 }
 
 .initSidebar{
@@ -205,7 +206,7 @@ nav #companyDrawer {
 
 #sidebar .sidebar-header button:hover{
   cursor: pointer;
-  background: rgba(173, 173, 173, 0.329);
+  background: var(--selection-hover);
 }
 
 #sidebar ul{
@@ -229,4 +230,26 @@ nav #companyDrawer {
 	border-radius: 10px;
 	color: var(--primary-color);
   font-weight: bold;
+}
+
+#sidebar ul li a:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+#sidebar .subTabs{
+  width: 90%;
+}
+
+#sidebar .subTabs li a{
+  border: none;
+  padding: 15px;
+  margin: 4px;
+  color: var(--pri-font-color)
+}
+
+#sidebar .subTabs li a:hover {
+  background-color: var(--selection-hover);
+  color: var(--pri-font-color);
 }
