@@ -75,6 +75,29 @@ ul, li{
   /* margin: 20px; */
 }
 
+.main-heading{
+  font-family:  var(--heavy-font);
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+}
+
+
+
+
+
+
+/* Paragraphs */
+
+.main-paragraph{
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+
+
 
 
 /* Buttons */

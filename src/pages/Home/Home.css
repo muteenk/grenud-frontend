@@ -31,13 +31,12 @@ Home Page CSS
 	object-fit: cover;
 }
 
-#home-hero .home-hero-info{
+#home-hero .home-hero-info {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	z-index: 1;
-
-	padding: 40px 20px;
+	padding: 84px 20px;
 }
 
 #home-hero .home-hero-info p{
@@ -94,3 +93,221 @@ Home Page CSS
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+
+
+
+
+.collidingBanners {
+	position: relative;
+	margin: 60px 0px;
+	height: 23em;
+}
+
+.collidingBanners .banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position: absolute;
+	width: 50%;
+	padding: 39px 20px;
+	box-shadow: 5px 5px 8px #aaa;
+	border-radius: 30px 0px 30px 0px;
+}
+
+.collidingBanners .banner h2 {
+	margin: 20px 25px;
+	font-family: var(--heavier-font);
+}
+
+.collidingBanners .banner p{
+	margin: 20px;
+	width: 70%;
+	font-size: 20px;
+}
+
+.collidingBanners .lowBanner {
+	background-color: rgb(241, 241, 241);
+	top: 0px;
+	left: 6em;
+	z-index: 1;
+}
+
+
+.collidingBanners .highBanner {
+	background-color: rgb(226, 226, 226);
+	bottom: -57px;
+	right: 8em;
+	z-index: 2;
+}
+
+
+
+
+
+
+
+
+/* ----------------------- Tech Cards CSS ---------------------- */
+
+#techCards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 55px 0px;
+}
+
+#techCards .tech-card-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 4em 0px;
+	height: 30em;
+}
+
+#techCards .tech-card {
+	position: relative;
+	background: rgba(0, 0, 0, 0.582);
+	padding: 10px 28px;
+	color: white;
+	text-align: center;
+}
+
+#techCards .tech-card:hover, #techCards .tech-card:hover img{
+	height: 27.5em;
+	width: 23.5em;
+}
+
+#techCards .tech-card:hover{
+	box-shadow: 5px 5px 8px #7a7a7a, -5px -5px 8px #7a7a7a;
+}
+
+#techCards h4, #techCards h1{
+	text-align: center;
+	font-size: 40px;
+	font-family: var(--heavier-font);
+	margin-top: 3em;	
+}
+
+#techCards .tech-card, #techCards .tech-card img {
+	height: 27em;
+	width: 23em;
+	transition: all .5s ease-in-out;
+}
+
+#techCards .tech-card img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	object-fit: cover;
+}
+
+
+
+
+
+
+/* -------------------- Tech Stack Banner Section ------------------ */
+
+
+#techStack {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 75px 20px;
+}
+
+
+#techStack .card-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+}
+
+
+#techStack .card-container .tech-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	border-top: 3px solid var(--primary-color);
+	padding: 20px;
+	width: 100%;
+}
+
+#techStack .card-container .tech-card:nth-child(1){
+	border-top: none;
+}
+
+#techStack .tech-card .tech-card-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#techStack .card-container .tech-card p{
+	width: 50%;
+}
+
+#techStack .card-index{
+	position: absolute;
+	color: white;
+	background-color: var(--primary-color);
+	padding: 8px 10px;
+	border-radius: 50px;
+	font-size: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#techStack .card-container .left{
+	flex-direction: row;
+	border-left: 3px solid var(--primary-color);
+	
+}
+
+#techStack .left .tech-card-info{
+	align-items: flex-start;
+}
+
+#techStack .left h4, #techStack .left p{
+	text-align: left;
+}
+
+#techStack .left .card-index{
+	left: -16px;
+}
+
+#techStack .card-container .right{
+	border-right: 3px solid var(--primary-color);
+	flex-direction: row-reverse;
+}
+
+#techStack .right .tech-card-info{
+	align-items: flex-end;
+}
+
+#techStack .right h4, #techStack .right p{
+	text-align: right;
+}
+
+#techStack .right .card-index{
+	right: -16px;
+}
+
+#techStack img {
+	margin: 25px 83px;
+	height: 5em;
+	filter: drop-shadow(3px 3px 5px #aaa);
+}
+
+
+
+
