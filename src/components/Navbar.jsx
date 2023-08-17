@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
 // Image Imports
-import logo from "../assets/logo.png"
+import logo from "../assets/logos/logo.png"
 
 // Component Imports
 import Sidebar from './Sidebar'

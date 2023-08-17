@@ -7,7 +7,7 @@ nav {
   justify-content: space-around;
   align-content: center;
   padding: 20px 20px;
-  border-bottom: .5px solid var(--gray-env);
+  /* border-bottom: .5px solid var(--gray-env); */
   position: absolute;
   top: 0px;
   left: 0px;
