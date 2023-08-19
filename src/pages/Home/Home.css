@@ -420,6 +420,49 @@ Home Page CSS
 
 
 
+
+
+
+/* ------------------------ Home Page Text Banner ----------------------- */
+
+#homeTextBanner {
+	background: rgb(226, 226, 226);
+	padding: 30px 20px;
+	margin: 30px 0px;
+}
+
+#homeTextBanner .text-sub-banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	/* box-shadow: 3px 3px 5px rgb(138, 138, 138), -3px -3px 5px rgb(138, 138, 138); */
+	padding: 20px;
+	border-radius: 20px 0px 20px 0px;
+	border: 3px solid var(--primary-color);
+	width: 60%;
+	margin: 20px auto;
+}
+
+#homeTextBanner .text-sub-banner p{
+	margin: 20px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#homeTextBanner .text-sub-banner .quote{
+	font-weight: bold;
+	text-align: center;
+}
+
+#homeTextBanner .text-sub-banner span{
+	font-weight: 400;
+}
+
+
+
+
 /* -------------------- Tech Stack Timeline Section ------------------ */
 
 

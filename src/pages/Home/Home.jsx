@@ -274,6 +274,19 @@ const Home = () => {
 
       {/* Text Banner Section Starts Here */}
 
+      <section id="homeTextBanner">
+
+          <h2 className="main-heading">Not just any software development company</h2>
+          <p className="main-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur quam distinctio reiciendis sequi. Possimus qui reiciendis nisi quidem modi odio. Voluptatem in praesentium at exercitationem asperiores consequuntur velit labore.</p>
+
+          <div className="text-sub-banner">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae animi ipsam consectetur incidunt obcaecati praesentium fugiat officiis fugit eveniet consequatur non pariatur omnis esse recusandae aspernatur commodi tempora impedit laboriosam, repellat qui, nobis accusantium doloribus? Perspiciatis quam ipsum quaerat esse?</p>
+            <p className="quote">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci accusamus voluptatibus officiis mollitia inventore, labore repudiandae quo ipsam sunt ab.</p>
+            <span className="quote-author">- Quote Author</span>
+          </div>
+
+      </section>
+
       {/* Text Banner Section Ends Here */}
 
 
