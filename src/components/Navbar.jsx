@@ -113,7 +113,7 @@ const Navbar = () => {
                         <Link to="/industries/retail">Retail</Link>
                     </li>
                     <li>
-                        <Link to="/industries/healthcare">Health Care</Link>
+                        <Link to="/industries/healthcare">Healthcare</Link>
                     </li>
                 </ul>
 

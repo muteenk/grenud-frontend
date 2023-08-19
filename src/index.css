@@ -60,6 +60,9 @@ ul, li{
   list-style: none;
 }
 
+body {
+  overflow-x: hidden !important;
+}
 
 
 
@@ -96,7 +99,13 @@ ul, li{
   margin: 20px;
 }
 
+.quote{
+  font-style: italic;
+}
 
+.quote::before, .quote::after{
+  content: '"';
+}
 
 
 
@@ -160,4 +169,19 @@ ul, li{
 
 .accent-text{
   color: var(--accent-color);
+}
+
+.quote-author{
+  font-weight: bold;
+  display: block;
+  text-align: right;
+}
+
+.spotBackground{
+  background: url("./assets/common/spotBackground.jpg");
+  filter: hue-rotate(50deg);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -2;
+  opacity: .3;
 }
