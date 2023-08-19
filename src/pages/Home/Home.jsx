@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
@@ -6,7 +6,7 @@ import './Home.css'
 
 // -------- Data imports -----------
 
-import {techStackTimelineContent, techCards}  from "./HomeData"
+import {techStackTimelineContent, techCards, industryTabs}  from "./HomeData"
 
 
 
@@ -20,9 +20,30 @@ const heroVideo = "/Videos/home-hero.mp4"
 
 
 const Home = () => {
+
+  // -------- State Variables -----------
+  const [activeIndustryTab, setActiveIndustryTab] = useState("Financial Services")
+
+
+  // -------- Event Handlers -----------
+
+  const handleIndustryTabs = (tabname) => {
+
+    setActiveIndustryTab(tabname)
+    
+  }
+
+
+
+
+
+
+
   return (
     
     <>
+
+      {/* Home Hero Section Starts Here  */}
 
       <section id="home-hero">
 
@@ -43,29 +64,38 @@ const Home = () => {
 
       </section>
 
+      {/* Home Hero Section Ends Here */}
 
 
 
 
-      <section className="collidingBanners">
-
-        <div className="banner lowBanner">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-          <Link to="/" className='pri-btn'>Learn more</Link>
-        </div>
-
-        <div className="banner highBanner">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-          <Link to="/" className='pri-btn'>Know more</Link>
-        </div>
-
-      </section>
 
 
 
-    
+
+
+
+
+
+      {/* Tech Cards Section Starts Here  */}
+
+
+      <div className="spotBackground"
+      style={{
+        height: "26em",
+        width: "26em",
+        top: "94em",
+        left: "82%",
+      }}></div>
+
+
+      <div className="spotBackground"
+      style={{
+        height: "32em",
+        width: "32em",
+        top: "123em",
+        right: "78%",
+      }}></div>
 
 
       <section id="techCards">
@@ -98,7 +128,167 @@ const Home = () => {
 
 
 
+      {/* Tech Cards Section Ends Here  */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Colliding Banners Section Starts Here  */}
+
+
+      <div className="spotBackground"
+      style={{
+        height: "40em",
+        width: "40em",
+        top: "49em",
+        right: "72%",
+      }}></div>
+
+      <section className="collidingBanners">
+
+        <div className="banner lowBanner">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          <Link to="/" className='pri-btn'>Learn more</Link>
+        </div>
+
+        <div className="banner highBanner">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          <Link to="/" className='pri-btn'>Know more</Link>
+        </div>
+
+      </section>
+
+
+      {/* Colliding Banners Section Ends Here  */}
+
+
+
+
+
+
+
+
+      {/* Slab Banner Section Starts Here */}
+
+      <div className="spotBackground"
+      style={{
+        height: "35em",
+        width: "35em",
+        top: "172em",
+        right: "50%",
+      }}></div>
+
+      <section id="slabBanner">
+
+          <div className="main-slab slab">
+            <h2 className='main-heading'>This is a slab heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae a magni quaerat hic perspiciatis harum nobis mollitia blanditiis beatae.</p>
+            <Link to="/" className='pri-btn-hollow'>Learn More</Link>
+          </div>
+          <div className="img-slab slab">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="" />
+            <p className="quote">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eligendi, voluptates id omnis voluptatum debitis veritatis dolore neque dignissimos quasi!
+            </p>
+            <span className="quote-author">- Quote Author</span>
+          </div>
+          <div className="img-slab slab">
+            <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="" />
+            <p className="quote">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos eligendi, voluptates id omnis voluptatum debitis veritatis dolore neque dignissimos quasi!
+            </p>
+            <span className="quote-author">- Quote Author</span>
+          </div>
+
+      </section>
+
+
+      {/* Slab Banner Section Ends Here */} 
+
+
+
+
+
+
+
+
+
+      {/* Industry Section Tabs Starts Here */}
+
+
+      <section id="industrySectionTabs">
+        <h2 className="main-heading">Technology is transforming every industry</h2>
+        <p className="main-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores porro asperiores officiis earum modi ratione esse quidem nihil quis commodi.</p>
+
+        <div className="tab-container">
+          <div className="tab-buttons">
+            { Object.keys(industryTabs).map( (tab, index) => {
+                return (
+                  <button className={`tab-btn ${activeIndustryTab === tab ? "active" : ""}`} onClick={() => {handleIndustryTabs(tab)}} key={index}>{tab}</button>
+                )
+            }) }
+          </div>
+          <div className="tab-display">
+            {
+              Object.keys(industryTabs).map( (tab, index) => {
+                return (
+                  <div className={`tab ${activeIndustryTab === tab ? "active" : ""}`} key={index}>
+                    <img src={industryTabs[tab].img} alt="" />
+                    <h3>{tab}</h3>
+                    <p>{industryTabs[tab].content}</p>
+                    <Link to={industryTabs[tab].link} className='pri-btn-solid'>EXPLORE</Link>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
+      </section>
+
+      
+      {/* Industry Section Tabs Ends Here */}
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Text Banner Section Starts Here */}
+
+      {/* Text Banner Section Ends Here */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* Tech Stack Timeline Section Starts Here */}
 
 
       <section id="techStack">
@@ -121,6 +311,9 @@ const Home = () => {
         </div>
 
       </section>
+
+
+      {/* Tech Stack Timeline section ends here */}
 
     </>
 

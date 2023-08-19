@@ -99,7 +99,7 @@ Home Page CSS
 
 .collidingBanners {
 	position: relative;
-	margin: 60px 0px;
+	margin: 0px 0px;
 	height: 23em;
 }
 
@@ -210,7 +210,217 @@ Home Page CSS
 
 
 
-/* -------------------- Tech Stack Banner Section ------------------ */
+
+
+
+
+
+/* ----------------------------- Slab Banner Section ------------------------- */
+
+
+#slabBanner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 8em 0px 30px 0px;
+}
+
+#slabBanner .slab{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 20px;
+}
+
+
+
+#slabBanner .slab p{
+	margin: 15px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#slabBanner .slab, #slabBanner .slab img{
+	height: 30em;
+	width: 35em;
+}
+
+#slabBanner .slab img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+}
+
+#slabBanner .img-slab{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.651);
+	color: white;
+}
+
+
+
+
+
+
+
+/* --------------------------- Industry Section Tabs Css ---------------------- */
+
+
+
+#industrySectionTabs .tab-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	height: 60vh;
+}
+
+#industrySectionTabs .tab-container .tab-buttons{
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	height: 100%;
+	width: max-content;
+}
+
+#industrySectionTabs .tab-buttons button {
+	padding: 15px 30px;
+	border: none;
+	background-color: transparent;
+	color: var(--pri-font-color);
+	font-size: 20px;
+	font-weight: 600;
+	transition: all .3s;
+	width: 100%;
+	border-radius: 50px 0px 0px 50px;
+	cursor: pointer;
+}
+
+#industrySectionTabs .tab-buttons button:hover {
+	background-color: var(--selection-hover);
+}
+
+#industrySectionTabs .tab-buttons .active, #industrySectionTabs .tab-buttons .active:hover{
+	background-color: var(--primary-color);
+	color: white;
+}
+
+#industrySectionTabs .tab-container .tab-display{
+	height: 100%;
+	width: 50%;
+	overflow-y: hidden;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.637);
+	color: white;
+	box-shadow: -5px -5px 8px #303030;
+}
+
+
+#industrySectionTabs .tab-container h3{
+	font-size: 40px;
+	font-family: var(--heavier-font);
+	margin: 20px 10px;
+}
+
+#industrySectionTabs .tab-container p{
+	font-size: 20px;
+	margin: 10px;
+}
+
+#industrySectionTabs .tab-container a{
+	margin: 10px;
+}
+
+
+#industrySectionTabs .tab-container img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+
+#industrySectionTabs .tab-container .tab-display .tab{
+	display: none;
+}
+
+#industrySectionTabs .tab-container .tab-display .active{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 20px;
+	height: 100%;
+}
+
+#industrySectionTabs .tab-display .active h3{
+	opacity: 0;
+	transform: translate(-50px, 0px);
+	animation: industryTabHeadingAnimation .5s ease-in-out forwards;
+}
+
+#industrySectionTabs .tab-display .active p{
+	opacity: 0;
+	transform: translate(-50px, 0px);
+	animation: industryTabParaAnimation .5s .2s ease-in-out forwards;
+}
+
+#industrySectionTabs .tab-display .active a{
+	opacity: 0;
+	transform: translate(-50px, 0px);
+	animation: industryTabLinkAnimation .5s .4s ease-in-out forwards;
+}
+
+
+@keyframes industryTabHeadingAnimation {
+	0%{
+		opacity: 0;
+		transform: translate(-50px, 0px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}	
+
+
+@keyframes industryTabParaAnimation {
+	0%{
+		opacity: 0;
+		transform: translate(-50px, 0px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+@keyframes industryTabLinkAnimation {
+	0%{
+		opacity: 0;
+		transform: translate(-50px, 0px);
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+}
+
+
+
+
+
+
+
+/* -------------------- Tech Stack Timeline Section ------------------ */
 
 
 #techStack {
