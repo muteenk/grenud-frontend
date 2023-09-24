@@ -90,6 +90,7 @@ nav .drawer {
 	border-top: 5px solid var(--primary-color);
 	min-width: 20em;
   top: 90px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.31);
 }
 
 nav .drawer ul{
@@ -131,6 +132,50 @@ nav #companyDrawer {
 }
 
 
+
+
+/* ----------------- Navbar on Scroll ----------------- */
+
+nav.scrolled {
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.367);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 6px;
+}
+
+nav.scrolled .left img{
+  height: 4em;
+}
+
+nav.scrolled .nav-tabs li a{
+  color: rgb(83, 83, 83);
+}
+
+nav.scrolled .nav-tabs li .active {
+  color: var(--primary-color);
+}
+
+nav.scrolled .right button{
+  border: none;
+  background: transparent;
+  border-radius: 50px;
+  padding: 10px 12px;
+  font-size: 20px;
+  margin: 10px;
+  color: #202020;
+  transition: all .3s;
+}
+
+nav.scrolled .right button:hover{
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.329);
+}
+
+
+
 /* ------------------ Sidebar ------------------ */
 
 
@@ -147,6 +192,7 @@ nav #companyDrawer {
   height: 100vh;
   padding: 20px;
   overflow-y: scroll;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.31);
 }
 
 .initSidebar{
@@ -252,4 +298,128 @@ nav #companyDrawer {
 #sidebar .subTabs li a:hover {
   background-color: var(--selection-hover);
   color: var(--pri-font-color);
+}
+
+
+
+
+
+/* ------------------ Footer ------------------ */
+
+footer{
+  background: linear-gradient(to right, rgb(0, 0, 49), rgb(0, 0, 97));
+  color: white;
+  padding: 10px;
+}
+
+.footer-head .branding{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.footer-head .branding img{
+  height: 7em;
+  border-radius: 10px;
+}
+
+.footer-head .branding h3{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--heavy-font);
+  margin: 0px;
+  width: 50em;
+}
+
+footer .footer-body{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.footer-body .footer-body-section{
+  margin: 20px;
+}
+
+.footer-body .footer-body-section h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: var(--heavy-font);
+}
+
+.footer-body-section li{
+  margin: 5px 0px;
+}
+
+.footer-body-section ul li a{
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 17px;
+  margin: 5px;
+  font-weight: 300;
+}
+
+.footer-body #socials a{
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 3px 0px;
+}
+
+#facebook-ico{
+  padding: 5px 7px;
+  transition: all .5s;
+}
+
+#facebook-ico:hover{
+  background-color: #3b5998;
+}
+
+#twitter-ico{
+  padding: 5px 8px;
+  transition: all .5s;
+}
+
+#twitter-ico:hover{
+  background-color: #00acee;
+}
+
+#linkedin-ico{
+  padding: 5px 8px;
+  transition: all .5s;
+}
+
+#linkedin-ico:hover{
+  background-color: #0077b5;
+}
+
+#insta-ico{
+  padding: 5px 8px;
+  transition: all .5s;
+}
+
+#insta-ico:hover{
+  background-color: #e4405f;
+}
+
+#youtube-ico{
+  padding: 5px 6px;
+  transition: all .5s;
+}
+
+#youtube-ico:hover{
+  background-color: #c4302b;
+}
+
+#whatsapp-ico{
+  padding: 5px 8px;
+  transition: all .5s;
+}
+
+#whatsapp-ico:hover{
+  background-color: #25d366;
 }

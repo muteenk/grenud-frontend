@@ -268,10 +268,6 @@ const Home = () => {
 
 
 
-
-
-
-
       {/* Text Banner Section Starts Here */}
 
       <section id="homeTextBanner">
@@ -286,6 +282,12 @@ const Home = () => {
           </div>
 
       </section>
+
+      <div id="graphic-sub-banner">
+        <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="" />
+        <h2>We are your ideal partners to leverage <br/> emerging tech in innovative tech.</h2>
+        <Link to="" className='pri-btn-solid'> LETS DISCUSS YOUR PROJECT </Link>          
+      </div>
 
       {/* Text Banner Section Ends Here */}
 
@@ -305,6 +307,9 @@ const Home = () => {
 
 
       <section id="techStack">
+
+        <h2 className="main-heading">Technologies we work with</h2>
+        <p className="main-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur quam distinctio reiciendis sequi. Possimus qui reiciendis nisi quidem modi odio. Voluptatem in praesentium at exercitationem asperiores consequuntur velit labore.</p>
 
         <div className="card-container">
 

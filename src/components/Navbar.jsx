@@ -14,6 +14,23 @@ const setActive = ({ isActive, isPending }) => isPending ? "pending" : isActive 
 const Navbar = () => {
 
     const [sidebarClass, setSidebarClass] = useState("initSidebar");
+    const [navClass, setNavClass] = useState("");
+    const [scrollTop, setScrollTop] = useState(0);
+
+    
+
+    const handleScroll = () => {
+        setScrollTop(window.scrollY);
+
+        if (scrollTop > 100){
+            setNavClass("scrolled");
+        }
+        else if (scrollTop <= 100){
+            setNavClass("");
+        }
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     const sidebarHandler = () => {
         
@@ -31,7 +48,7 @@ const Navbar = () => {
 
   return (
     <>
-        <nav>
+        <nav className={navClass}>
             <div className="left">
                 <Link to="/" className="branding">
                     <img src={logo} alt="Grenud" />
